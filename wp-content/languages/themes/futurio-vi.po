@@ -1,0 +1,227 @@
+# Translation of Themes - Futurio in Vietnamese
+# This file is distributed under the same license as the Themes - Futurio package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-05-11 01:12:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: vi_VN\n"
+"Project-Id-Version: Themes - Futurio\n"
+
+#. Theme Name of the theme
+msgid "Futurio"
+msgstr "Futurio"
+
+#. Description of the theme
+msgid "Futurio is a lightweight, fast and customizable free multi-purpose and WooCommerce WordPress theme, suitable for business, portfolio, creative, and photography sites, eCommerce shops, landing pages, blogs or WooCommerce storefronts. Futurio works perfectly with all page builders, like Elementor, Beaver Builder, King Composer, Brizy, Visual Composer, SiteOrigin, Divi or Gutenberg, and supports most free and premium WordPress plugins, like WooCommerce, Jetpack, Contact Form 7, Yoast SEO and many more. Futurio is responsive, SEO friendly, WPML, translation and RTL ready, and comes with a 1-click-demo-import feature. Demos ready for download: https://futuriowp.com/demos/"
+msgstr "Futurio là theme WooCommerce WordPress đa năng, code chuẩn và dễ tùy biến, phù hợp cho trang web dịch vụ, portfolio, sáng tạo, nhiếp ảnh, shop bán hàng, landing page hoặc blog. Futurio làm việc tốt với tất cả page builder, ví dụ Elementor, Beaver Builder, King Composer, Brizy, Visual Composer, SiteOrigin, Divi hoặc Gutenberg, và hỗ trợ các plugin miễn phí và trả phí, ví dụ WooCommerce, Jetpack, Contact Form 7, Yoast SEO, and nhiều nữa. Futurio đảm bảo responsive, chuẩn SEO, tương thích WPML và RTL, và có tính năng 1-click-import-demo. Tải các demo ở đây: https://futuriowp.com/demos/"
+
+#: lib/customizer/customizer-notice/class-customizer-notice.php:144
+#: lib/customizer/plugin-install/class-plugin-install-helper.php:110
+msgid "Activating"
+msgstr "Kích hoạt"
+
+#: template-parts/template-part-mainmenu.php:101
+msgid "Menu"
+msgstr "Menu"
+
+#: functions.php:25
+msgid "Main Menu"
+msgstr "Menu chính"
+
+#: content-none.php:19
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Chúng tôi không tìm được điều bạn đang tìm. Thử tìm kiếm."
+
+#: content-none.php:14
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Rất tiếc, không có kết quả khớp. Hãy thử lại với từ khóa khác."
+
+#. translators: %1$s: link to admin area
+#: content-none.php:8
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Sẵn sàng viết bài đầu tiên? <a href=\"%1$s\">Bắt đầu ở đây</a>."
+
+#: content-none.php:2
+msgid "Nothing Found"
+msgstr "Không tìm thấy"
+
+#: lib/dashboard.php:129
+msgid "Install"
+msgstr "Cài đặt"
+
+#. translators: %s: Plugin name string
+#: lib/dashboard.php:76 lib/dashboard.php:126
+#: lib/customizer-plugin-recommend.php:20
+msgid "To take full advantage of all the features this theme has to offer, please install and activate the %s plugin."
+msgstr "Để có đầy đủ tính năng của theme, hãy cài đặt và kích hoạt plugin %s."
+
+#. translators: %s: Theme name
+#: lib/dashboard.php:83
+msgid "Get started with %s"
+msgstr "Bắt đầu với %s"
+
+#. translators: %s: Theme name
+#: lib/dashboard.php:70 lib/dashboard.php:120
+#: lib/customizer-plugin-recommend.php:24
+msgid "Thank you for installing %s."
+msgstr "Cảm ơn đã cài đặt %s."
+
+#: lib/futurio-plugin-install.php:75
+msgid "Learn more"
+msgstr "Xem thêm"
+
+#: lib/futurio-plugin-install.php:55 lib/customizer-plugin-recommend.php:25
+msgid "Install now"
+msgstr "Cài đặt ngay"
+
+#: lib/dashboard.php:129
+#: lib/customizer/plugin-install/class-plugin-install-helper.php:59
+#: lib/customizer/plugin-install/class-plugin-install-helper.php:75
+#: lib/futurio-plugin-install.php:40 lib/customizer-plugin-recommend.php:26
+msgid "Activate"
+msgstr "Kích hoạt"
+
+#: lib/dashboard.php:129 lib/futurio-plugin-install.php:29
+msgid "Activated"
+msgstr "Đã kích hoạt"
+
+#: lib/wp_bootstrap_navwalker.php:326
+msgid "Add a menu"
+msgstr "Thêm menu"
+
+#: template-parts/template-part-postauthor.php:4
+msgid "About The Author"
+msgstr "Về tác giả"
+
+#: functions.php:541
+msgid "Previous Post"
+msgstr "Bài trước"
+
+#: functions.php:402
+msgid "Comment on "
+msgstr "Bình luận"
+
+#: functions.php:397
+msgid "Off"
+msgstr "Tắt"
+
+#. translators: %1$s: Futurio name with futuriowp.com URL
+#: functions.php:366
+msgid "Theme: %1$s"
+msgstr "Theme: %1$s"
+
+#. translators: %s: WordPress name with wordpress.org URL
+#: functions.php:361
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#. translators: %s: WordPress name with wordpress.org URL
+#: functions.php:361
+msgid "Proudly powered by %s"
+msgstr "Thiết kế bởi %s"
+
+#: functions.php:337
+msgid "Tags"
+msgstr "Thẻ"
+
+#: functions.php:333
+msgid "Posted in"
+msgstr "Đăng trong"
+
+#: functions.php:275
+msgid "WooCommerce archive sidebar"
+msgstr "Sidebar WooCommerce archive"
+
+#: functions.php:265
+msgid "WooCommerce Sidebar"
+msgstr "Sidebar WooCommerce"
+
+#: functions.php:254
+msgid "Footer Section"
+msgstr "Footer"
+
+#: functions.php:244
+msgid "Menu Section"
+msgstr "Menu"
+
+#: functions.php:234
+msgid "Archive sidebar"
+msgstr "Sidebar Archive"
+
+#: functions.php:224
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: functions.php:26
+msgid "Homepage main menu"
+msgstr "Menu chính trang chủ"
+
+#: comments.php:56
+msgid "Comments are closed."
+msgstr "Đã tắt bình luận."
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:23
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s bình luận cho &ldquo;%2$s&rdquo;"
+
+#. translators: %s: post title
+#: comments.php:19
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Bình luận cho &ldquo;%s&rdquo;"
+
+#: 404.php:40
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Không tìm thấy gì ở đây. Hãy thử tìm kiếm."
+
+#: 404.php:37
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ồ! Trang này bị lỗi rồi."
+
+#. translators: %s: search result string
+#: search.php:9
+msgid "Search Results for: %s"
+msgstr "Kết quả tìm kiếm cho: %s"
+
+#: functions.php:623
+msgid "My Account"
+msgstr "Tài khoản"
+
+#: functions.php:573
+msgid "View your shopping cart"
+msgstr "Xem giỏ hàng"
+
+#: functions.php:557
+msgid "By"
+msgstr "Bởi"
+
+#: functions.php:542
+msgid "Next"
+msgstr "Tiếp"
+
+#: functions.php:542
+msgid "Next Post"
+msgstr "Bài tiếp theo"
+
+#: functions.php:541
+msgid "Previous"
+msgstr "Trước"
+
+#. Author URI of the theme
+msgid "https://futuriowp.com/about/"
+msgstr "https://futuriowp.com/about/"
+
+#. Author of the theme
+msgid "FuturioWP"
+msgstr "FuturioWP"
+
+#. Theme URI of the theme
+msgid "https://futuriowp.com/"
+msgstr "https://futuriowp.com/"

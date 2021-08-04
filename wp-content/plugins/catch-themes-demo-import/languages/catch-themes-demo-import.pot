@@ -1,0 +1,949 @@
+# Copyright (C) 2012-2021 Catch Plugins
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Catch Themes Demo Import\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2021-03-31 22:17-0700\n"
+"PO-Revision-Date: 2016-12-12 09:23-0500\n"
+"Last-Translator: Sakin Shrestha <info@catchplugins.com>\n"
+"Language-Team: Catch Plugins <info@catchplugins.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;esc_attr_e;esc_attr__;_nx;_x;"
+"esc_html_e;esc_html__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_n_noop:1,2;"
+"__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../catch-themes-demo-import.php:62
+#, php-format
+msgid ""
+"The %2$sCatch Themes Demo Import%3$s plugin requires %2$sPHP 5.3.2+%3$s to "
+"run properly. Please contact your hosting company and ask them to update the "
+"PHP version of your site to at least PHP 5.3.2.%4$s Your current version of "
+"PHP: %2$s%1$s%3$s"
+msgstr ""
+
+#: ../inc/CatchThemesDemoImport.php:138 ../inc/CatchThemesDemoImport.php:139
+#: ../inc/Helpers.php:308 ../inc/Helpers.php:309
+#: ../partials/catchthemes-demo-import.php:17
+msgid "Catch Themes Demo Import"
+msgstr ""
+
+#: ../inc/CatchThemesDemoImport.php:193
+msgid "No preview image defined for this import."
+msgstr ""
+
+#: ../inc/CatchThemesDemoImport.php:194
+msgid "Are you sure?"
+msgstr ""
+
+#: ../inc/CatchThemesDemoImport.php:195
+msgid "Cancel"
+msgstr ""
+
+#: ../inc/CatchThemesDemoImport.php:196
+msgid "Yes, import!"
+msgstr ""
+
+#: ../inc/CatchThemesDemoImport.php:197
+msgid "Selected demo import:"
+msgstr ""
+
+#: ../inc/CatchThemesDemoImport.php:253
+msgid "Manually uploaded files"
+msgstr ""
+
+#: ../inc/CatchThemesDemoImport.php:266 ../inc/CatchThemesDemoImport.php:277
+msgid "Downloaded files"
+msgstr ""
+
+#: ../inc/CatchThemesDemoImport.php:273
+#, php-format
+msgid "The import files for: %s were successfully downloaded!"
+msgstr ""
+
+#: ../inc/CatchThemesDemoImport.php:282
+msgid "No import files specified!"
+msgstr ""
+
+#: ../inc/CatchThemesDemoImport.php:403
+#, php-format
+msgid ""
+"%1$s%3$sThat's it, all done!%4$s%2$sThe demo import has finished. Please "
+"check your page and make sure that everything has imported correctly. If it "
+"did, you can deactivate the %3$sCatch Themes Demo Import%4$s plugin, because "
+"it has done its job.%5$s"
+msgstr ""
+
+#: ../inc/CatchThemesDemoImport.php:414
+#, php-format
+msgid ""
+"%1$sThe demo import has finished, but there were some import errors.%2$sMore "
+"details about the errors can be found in this %3$s%5$slog file%6$s%4$s%7$s"
+msgstr ""
+
+#: ../inc/CatchThemesDemoImport.php:566 ../partials/display-dashboard.php:19
+msgid "Settings"
+msgstr ""
+
+#: ../inc/CatchThemesThemePlugin.php:154
+msgid "Themes by CatchThemes"
+msgstr ""
+
+#: ../inc/CatchThemesThemePlugin.php:434
+msgctxt "Plugin Installer"
+msgid "Catch Plugins"
+msgstr ""
+
+#: ../inc/CatchThemesThemePlugin.php:473
+#, php-format
+msgid ""
+"You can use any of our free plugins or premium plugins from <a href=\"%s\" "
+"target=\"_blank\">Catch Plugins</a>"
+msgstr ""
+
+#: ../inc/CustomizerImporter.php:37 ../inc/CustomizerImporter.php:45
+msgid "Importing customizer settings"
+msgstr ""
+
+#: ../inc/CustomizerImporter.php:43
+msgid "Customizer settings import finished!"
+msgstr ""
+
+#: ../inc/CustomizerImporter.php:73
+#, php-format
+msgid "Error: The customizer import file is missing! File path: %s"
+msgstr ""
+
+#: ../inc/CustomizerImporter.php:93
+msgid ""
+"Error: The customizer import file is not in a correct format. Please make "
+"sure to use the correct customizer import file."
+msgstr ""
+
+#: ../inc/CustomizerImporter.php:104
+msgid ""
+"Error: The customizer import file is not suitable for current theme. You can "
+"only import customizer settings for the same theme or a child theme."
+msgstr ""
+
+#: ../inc/Downloader.php:58
+msgid "Missing URL for downloading a file!"
+msgstr ""
+
+#: ../inc/Downloader.php:76
+#, php-format
+msgid ""
+"An error occurred while fetching file from: %1$s%2$s%3$s!%4$sReason: %5$s - "
+"%6$s."
+msgstr ""
+
+#: ../inc/Helpers.php:197 ../inc/Helpers.php:240
+#, php-format
+msgid ""
+"An error occurred while writing file to your server! Tried to write a file "
+"to: %s%s."
+msgstr ""
+
+#: ../inc/Helpers.php:274
+#, php-format
+msgid ""
+"An error occurred while reading a file from your server! Tried reading file "
+"from path: %s%s."
+msgstr ""
+
+#: ../inc/Helpers.php:297
+#, php-format
+msgid ""
+"This WordPress page does not have %sdirect%s write file access. This plugin "
+"needs it in order to save the demo import xml file to the upload directory "
+"of your site. You can change this setting with these instructions: %s."
+msgstr ""
+
+#: ../inc/Helpers.php:321
+msgid ""
+"An error occurred while retrieving reading/writing permissions to your "
+"server (could not retrieve WP filesystem credentials)!"
+msgstr ""
+
+#: ../inc/Helpers.php:329
+msgid "Your WordPress login credentials don't allow to use WP_Filesystem!"
+msgstr ""
+
+#: ../inc/Helpers.php:369
+msgid "Catch Themes Demo Import - "
+msgstr ""
+
+#: ../inc/Helpers.php:403
+#, php-format
+msgid ""
+"%sYour user role isn't high enough. You don't have permission to import demo "
+"data.%s"
+msgstr ""
+
+#: ../inc/Helpers.php:449
+#, php-format
+msgid "Content file was not uploaded. Error: %s"
+msgstr ""
+
+#: ../inc/Helpers.php:453 ../inc/Helpers.php:470 ../inc/Helpers.php:487
+#: ../inc/Helpers.php:498 ../inc/Helpers.php:518 ../inc/Helpers.php:526
+msgid "Upload files"
+msgstr ""
+
+#: ../inc/Helpers.php:466
+#, php-format
+msgid "Widget file was not uploaded. Error: %s"
+msgstr ""
+
+#: ../inc/Helpers.php:483
+#, php-format
+msgid "Customizer file was not uploaded. Error: %s"
+msgstr ""
+
+#: ../inc/Helpers.php:496
+msgid "Missing Redux option name! Please also enter the Redux option name!"
+msgstr ""
+
+#: ../inc/Helpers.php:514
+#, php-format
+msgid "Redux file was not uploaded. Error: %s"
+msgstr ""
+
+#: ../inc/Helpers.php:524
+msgid "The import files were successfully uploaded!"
+msgstr ""
+
+#: ../inc/Helpers.php:550
+#, php-format
+msgid "Initial max execution time = %s"
+msgstr ""
+
+#: ../inc/Helpers.php:554
+#, php-format
+msgid ""
+"Files info:%1$sSite URL = %2$s%1$sData file = %3$s%1$sWidget file = %4$s"
+"%1$sCustomizer file = %5$s%1$sRedux files:%1$s%6$s"
+msgstr ""
+
+#: ../inc/Helpers.php:557 ../inc/Helpers.php:558 ../inc/Helpers.php:559
+#: ../inc/Helpers.php:560
+msgid "not defined!"
+msgstr ""
+
+#: ../inc/Importer.php:172
+msgid "New AJAX call!"
+msgstr ""
+
+#: ../inc/ReduxImporter.php:23
+msgid "The Redux plugin is not activated, so the Redux import was skipped!"
+msgstr ""
+
+#: ../inc/ReduxImporter.php:32 ../inc/ReduxImporter.php:53
+#: ../inc/ReduxImporter.php:66
+msgid "Importing Redux settings"
+msgstr ""
+
+#: ../inc/ReduxImporter.php:51
+#, php-format
+msgid "Redux settings import for: %s finished successfully!"
+msgstr ""
+
+#: ../inc/ReduxImporter.php:57
+#, php-format
+msgid ""
+"The Redux option name: %s, was not found in this WP site, so it was not "
+"imported!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:34
+msgid "There are no predefined demo imports for currently active theme!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:37
+msgid "Here are the predefined demo imports:"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:71
+msgid ""
+"At least one of the possible options should be set! Check them with --help"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:122
+msgid ""
+"The \"predefined\" parameter should be a number (an index of the CTDI "
+"predefined demo import)!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:128
+msgid ""
+"The supplied predefined index does not exist! Please take a look at the "
+"available predefined demo imports:"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:135
+msgid "Predefined demo import started! All other parameters will be ignored!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:140
+#, php-format
+msgid "Selected predefined demo import: %s"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:143
+msgid "Preparing the demo import files..."
+msgstr ""
+
+#: ../inc/WPCLICommands.php:148
+msgid "Demo import files could not be retrieved!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:151
+msgid "Demo import files retrieved successfully!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:153
+msgid "Importing..."
+msgstr ""
+
+#: ../inc/WPCLICommands.php:173
+msgid "Predefined import finished!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:185
+msgid "Content import file provided does not exist! Skipping this import!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:194
+msgid "Importing content (this might take a while)..."
+msgstr ""
+
+#: ../inc/WPCLICommands.php:196
+msgid "Importing content"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:201
+msgid "Content import finished!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:204
+msgid "There were some issues while importing the content!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:223
+msgid "Widgets import file provided does not exist! Skipping this import!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:227
+msgid "Importing widgets..."
+msgstr ""
+
+#: ../inc/WPCLICommands.php:232
+msgid "Widgets imported successfully!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:235
+msgid "There were some issues while importing widgets!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:254
+msgid "Customizer import file provided does not exist! Skipping this import!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:258
+msgid "Importing customizer settings..."
+msgstr ""
+
+#: ../inc/WPCLICommands.php:263
+msgid "Customizer settings imported successfully!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:266
+msgid "There were some issues while importing customizer settings!"
+msgstr ""
+
+#: ../inc/WPCLICommands.php:286
+#, php-format
+msgid "Executing action: %s ..."
+msgstr ""
+
+#: ../inc/WidgetImporter.php:40 ../inc/WidgetImporter.php:52
+msgid "Importing widgets"
+msgstr ""
+
+#: ../inc/WidgetImporter.php:88
+msgid "Error: Widget import file could not be found."
+msgstr ""
+
+#: ../inc/WidgetImporter.php:118
+msgid ""
+"Error: Widget import data could not be read. Please try a different file."
+msgstr ""
+
+#: ../inc/WidgetImporter.php:157
+msgid "Sidebar does not exist in theme (moving widget to Inactive)"
+msgstr ""
+
+#: ../inc/WidgetImporter.php:178
+msgid "Site does not support widget"
+msgstr ""
+
+#: ../inc/WidgetImporter.php:211
+msgid "Widget already exists"
+msgstr ""
+
+#: ../inc/WidgetImporter.php:269
+msgid "Imported"
+msgstr ""
+
+#: ../inc/WidgetImporter.php:273
+msgid "Imported to Inactive"
+msgstr ""
+
+#: ../inc/WidgetImporter.php:279
+msgid "No Title"
+msgstr ""
+
+#: ../inc/WidgetImporter.php:326
+msgid "No results for widget import!"
+msgstr ""
+
+#: ../inc/ctp-tabs-removal.php:69
+msgid "Connection Error. Please try again."
+msgstr ""
+
+#: ../inc/demo-importer.php:41 ../inc/demo-importer.php:122
+msgid ""
+"You do not have sufficient permissions to activate plugins for this site."
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:19
+msgid ""
+"Catch Themes Demo Import is a simple and easy-to-use demo importer WordPress "
+"plugin that allows you to import the theme demo data (design and content "
+"placement) you desire in just a single click."
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:25
+msgid "Dashboard"
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:34
+msgid "Catch Themes & Catch Plugins Tabs"
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:39
+msgid ""
+"If you want to turn off Catch Themes & Catch Plugins tabs option in Add "
+"Themes and Add Plugins page, please uncheck the following option."
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:44
+msgid "Turn On Catch Themes & Catch Plugin tabs"
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:67
+msgid "Features"
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:73
+msgid "Supports all themes on WordPress"
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:74
+msgid ""
+"You don’t have to worry if you have a slightly different or complicated "
+"theme installed on your website. It supports all the themes on WordPress and "
+"makes your website more striking and playful."
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:78
+msgid "Lightweight"
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:79
+msgid ""
+"It is extremely lightweight. You do not need to worry about it affecting the "
+"space and speed of your website."
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:83
+msgid "Responsive Design"
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:84
+msgid ""
+"One of the key features of our plugins is that your website will magically "
+"respond and adapt to different screen sizes delivering an optimized design "
+"for iPhones, iPads, and other mobile devices. No longer will you need to "
+"zoom and scroll around when browsing on your mobile phone."
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:88
+msgid "Incredible Support"
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:89
+msgid ""
+"We have a great line of support team and support documentation. You do not "
+"need to worry about how to use the plugins we provide, just refer to our "
+"Tech Support Forum. Further, if you need to do advanced customization to "
+"your website, you can always hire our theme customizer!"
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:107
+msgid ""
+"Please install Essential Content Types plugin to fully import the theme demo "
+"including Custom Post Types like Featured Content, Portfolio, Testimonials, "
+"and Services."
+msgstr ""
+
+#: ../partials/catchthemes-demo-import.php:114
+msgid "Required plugin ECT has been activated, now you can import the demo"
+msgstr ""
+
+#: ../partials/display-dashboard.php:44
+msgid "Media"
+msgstr ""
+
+#: ../partials/display-dashboard.php:56
+msgid "Categories"
+msgstr ""
+
+#: ../partials/display-dashboard.php:68
+msgid "Users"
+msgstr ""
+
+#: ../partials/display-dashboard.php:80
+msgid "Comments"
+msgstr ""
+
+#: ../partials/footer.php:4
+msgid "Catch Plugins"
+msgstr ""
+
+#: ../partials/footer.php:9
+msgid "View Themes"
+msgstr ""
+
+#: ../partials/footer.php:10
+msgid "View Plugins"
+msgstr ""
+
+#: ../partials/footer.php:11
+msgid "Support"
+msgstr ""
+
+#: ../partials/plugin-page.php:25
+#, php-format
+msgid ""
+"%sWarning: your server is using %sPHP safe mode%s. This means that you might "
+"experience server timeout errors.%s"
+msgstr ""
+
+#: ../partials/plugin-page.php:38
+msgid "Before you begin, make sure all the required plugins are activated."
+msgstr ""
+
+#: ../partials/plugin-page.php:43
+msgid ""
+"Importing demo data (post, pages, images, theme settings, ...) is the "
+"easiest way to setup your theme."
+msgstr ""
+
+#: ../partials/plugin-page.php:44
+msgid ""
+"It will allow you to quickly edit everything instead of creating content "
+"from scratch."
+msgstr ""
+
+#: ../partials/plugin-page.php:49
+msgid "When you import the data, the following things might happen:"
+msgstr ""
+
+#: ../partials/plugin-page.php:52
+msgid ""
+"No existing posts, pages, categories, images, custom post types or any other "
+"data will be deleted or modified."
+msgstr ""
+
+#: ../partials/plugin-page.php:53
+msgid ""
+"Posts, pages, images, widgets, menus and other theme settings will get "
+"imported."
+msgstr ""
+
+#: ../partials/plugin-page.php:54
+msgid ""
+"Please click on the Import button only once and wait, it can take a couple "
+"of minutes."
+msgstr ""
+
+#: ../partials/plugin-page.php:59
+msgid "Switch to manual import!"
+msgstr ""
+
+#: ../partials/plugin-page.php:61
+msgid "Switch back to theme predefined imports!"
+msgstr ""
+
+#: ../partials/plugin-page.php:77
+msgid ""
+"There are no predefined import files available in this theme. Please upload "
+"the import files manually!"
+msgstr ""
+
+#: ../partials/plugin-page.php:84
+msgid "Manual demo files upload"
+msgstr ""
+
+#: ../partials/plugin-page.php:87
+msgid "Choose a XML file for content import:"
+msgstr ""
+
+#: ../partials/plugin-page.php:92
+msgid "Choose a WIE or JSON file for widget import:"
+msgstr ""
+
+#: ../partials/plugin-page.php:97
+msgid "Choose a DAT file for customizer import:"
+msgstr ""
+
+#: ../partials/plugin-page.php:103
+msgid "Choose a JSON file for Redux import:"
+msgstr ""
+
+#: ../partials/plugin-page.php:106
+msgid "Enter the Redux option name:"
+msgstr ""
+
+#: ../partials/plugin-page.php:114 ../partials/plugin-page.php:126
+msgid "Import Demo Data"
+msgstr ""
+
+#: ../partials/plugin-page.php:141
+msgid "All"
+msgstr ""
+
+#: ../partials/plugin-page.php:148
+msgid "Search demos..."
+msgstr ""
+
+#: ../partials/plugin-page.php:172
+msgid "No preview image."
+msgstr ""
+
+#: ../partials/plugin-page.php:183
+msgid "Buy Now"
+msgstr ""
+
+#: ../partials/plugin-page.php:185
+msgid "Import"
+msgstr ""
+
+#: ../partials/plugin-page.php:189
+msgid "Preview"
+msgstr ""
+
+#: ../partials/plugin-page.php:202
+msgid "Importing, please wait!"
+msgstr ""
+
+#: ../partials/sidebar.php:3
+msgid "Recommendations"
+msgstr ""
+
+#: ../partials/sidebar.php:8
+msgid "Premium Themes"
+msgstr ""
+
+#: ../partials/sidebar.php:9
+msgid ""
+"Check out our simple, clean and responsive Premium WordPress Themes that "
+"come with an array of crucial features with a superior functionality."
+msgstr ""
+
+#: ../partials/sidebar.php:9
+msgid "Check our premium themes."
+msgstr ""
+
+#: ../partials/sidebar.php:16
+msgid "Free Themes"
+msgstr ""
+
+#: ../partials/sidebar.php:17
+msgid ""
+"Check out our collection of Free WordPress Themes that are clean, simple and "
+"feature-rich."
+msgstr ""
+
+#: ../partials/sidebar.php:17
+msgid "Check our free themes."
+msgstr ""
+
+#: ../partials/sidebar.php:25
+msgid "Premium Plugins"
+msgstr ""
+
+#: ../partials/sidebar.php:26
+msgid ""
+"Check out our secured Premium WordPress Plugins to enhance and add extra "
+"functionalities to your website. An exceptional way to get the most out of "
+"WordPress!"
+msgstr ""
+
+#: ../partials/sidebar.php:26
+msgid "Check our premium plugins."
+msgstr ""
+
+#: ../partials/sidebar.php:34
+msgid "Free Plugins"
+msgstr ""
+
+#: ../partials/sidebar.php:35
+msgid ""
+"Check out our Free WordPress Plugins and get the taste of our service "
+"without affecting your wallet."
+msgstr ""
+
+#: ../partials/sidebar.php:36
+msgid "check our free plugins."
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:131
+msgid "Could not open the file for parsing"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:167
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:283
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:356
+#, php-format
+msgid ""
+"This WXR file (version %s) is newer than the importer (version %s) and may "
+"not be supported. Please consider updating."
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:506
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:566
+msgid "Invalid author mapping"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:667
+msgid "Cannot import auto-draft posts"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:755
+#, php-format
+msgid "Failed to import \"%s\": Invalid post type %s"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:765
+#, php-format
+msgid "%s \"%s\" already exists."
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:843
+#, php-format
+msgid "Skipping attachment \"%s\", fetching attachments disabled"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:857
+#, php-format
+msgid "Failed to import \"%s\" (%s)"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:889
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1772
+#, php-format
+msgid "Imported \"%s\" (%s)"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:894
+#, php-format
+msgid "Post %d remapped to %d"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:934
+#, php-format
+msgid "Failed to import term: %s - %s"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1075
+msgid "Invalid file type"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1558
+#, php-format
+msgid "Failed to import user \"%s\""
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1579
+#, php-format
+msgid "Imported user \"%s\""
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1583
+#, php-format
+msgid "User %d remapped to %d"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1733
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1777
+#, php-format
+msgid "Term %d remapped to %d"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1835
+#, php-format
+msgid "Failed to add metakey: %s, metavalue: %s to term_id: %d"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1844
+#, php-format
+msgid "Meta for term_id %d : %s => %s ; successfully added!"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1895
+#, php-format
+msgid "Remote server returned %1$d %2$s for %3$s"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1916
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1922
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1947
+#, php-format
+msgid "Running post-processing for post %d"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1960
+#, php-format
+msgid "Could not find the post parent for \"%s\" (post #%d)"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1965
+#, php-format
+msgid "Post %d was imported with parent %d, but could not be found"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1979
+#, php-format
+msgid "Could not find the author for \"%s\" (post #%d)"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:1984
+#, php-format
+msgid "Post %d was imported with author \"%s\", but could not be found"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2010
+#, php-format
+msgid "Post %d was marked for post-processing, but none was required."
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2021
+#, php-format
+msgid "Could not update \"%s\" (post #%d) with mapped data"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2066
+#, php-format
+msgid "Could not find the menu object for \"%s\" (post #%d)"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2071
+#, php-format
+msgid ""
+"Post %d was imported with object \"%d\" of type \"%s\", but could not be "
+"found"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2093
+#, php-format
+msgid "Could not find the comment parent for comment #%d"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2097
+#, php-format
+msgid "Comment %d was imported with parent %d, but could not be found"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2111
+#, php-format
+msgid "Could not find the author for comment #%d"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2115
+#, php-format
+msgid "Comment %d was imported with author %d, but could not be found"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2132
+#, php-format
+msgid "Could not update comment #%d with mapped data"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2161
+#, php-format
+msgid "Faulty term_id provided in terms-to-be-remapped array %s"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2171
+#, php-format
+msgid "No taxonomy provided in terms-to-be-remapped array for term #%d"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2182
+#, php-format
+msgid "No parent_slug identified in remapping-array for term: %d"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2190
+#, php-format
+msgid "The term(%d)\"s parent_slug (%s) is not found in the remapping-array."
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2204
+#, php-format
+msgid "No data returned by get_term_by for term_id #%d"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2223
+#, php-format
+msgid "Could not update \"%s\" (term #%d) with mapped data"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2233
+#, php-format
+msgid "Term %d was successfully updated with parent %d"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2268
+msgid "Starting remapping of featured images"
+msgstr ""
+
+#: ../vendor/catchthemes/wp-content-importer-v2/src/WXRImporter.php:2277
+#, php-format
+msgid "Remapping featured image ID %d to new ID %d for post ID %d"
+msgstr ""
