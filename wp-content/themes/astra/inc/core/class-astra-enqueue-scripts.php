@@ -49,6 +49,7 @@ if ( ! class_exists( 'Astra_Enqueue_Scripts' ) ) {
 			add_action( 'enqueue_block_editor_assets', array( $this, 'gutenberg_assets' ) );
 			add_filter( 'admin_body_class', array( $this, 'admin_body_class' ) );
 			add_action( 'wp_print_footer_scripts', array( $this, 'astra_skip_link_focus_fix' ) );
+			add_filter( 'gallery_style', array( $this, 'enqueue_galleries_style' ) );
 		}
 
 		/**
@@ -88,7 +89,7 @@ if ( ! class_exists( 'Astra_Enqueue_Scripts' ) ) {
 			global $pagenow;
 			$screen = get_current_screen();
 
-			if ( ( 'post-new.php' == $pagenow || 'post.php' == $pagenow ) && ( defined( 'ASTRA_ADVANCED_HOOKS_POST_TYPE' ) && ASTRA_ADVANCED_HOOKS_POST_TYPE == $screen->post_type ) ) {
+			if ( ( ( 'post-new.php' == $pagenow || 'post.php' == $pagenow ) && ( defined( 'ASTRA_ADVANCED_HOOKS_POST_TYPE' ) && ASTRA_ADVANCED_HOOKS_POST_TYPE == $screen->post_type ) ) || 'widgets.php' == $pagenow ) {
 				return;
 			}
 
@@ -114,6 +115,11 @@ if ( ! class_exists( 'Astra_Enqueue_Scripts' ) ) {
 				$classes .= ' ast-plain-container';
 			}
 
+			$site_layout = astra_get_option( 'site-layout' );
+			if ( 'ast-box-layout' === $site_layout ) {
+				$classes .= ' ast-max-width-layout';
+			}
+
 			$classes .= ' ast-' . astra_page_layout();
 
 			return $classes;
@@ -127,18 +133,38 @@ if ( ! class_exists( 'Astra_Enqueue_Scripts' ) ) {
 		public static function theme_assets() {
 
 			$default_assets = array(
-
 				// handle => location ( in /assets/js/ ) ( without .js ext).
 				'js'  => array(
 					'astra-theme-js' => 'style',
 				),
-
 				// handle => location ( in /assets/css/ ) ( without .css ext).
 				'css' => array(
-					'astra-theme-css' => 'style',
+					'astra-theme-css' => Astra_Builder_Helper::apply_flex_based_css() ? 'style-flex' : 'style',
 				),
 			);
 
+			if ( true === Astra_Builder_Helper::$is_header_footer_builder_active ) {
+
+				$default_assets = array(
+					// handle => location ( in /assets/js/ ) ( without .js ext).
+					'js'  => array(
+						'astra-theme-js' => 'frontend',
+					),
+					// handle => location ( in /assets/css/ ) ( without .css ext).
+					'css' => array(
+						'astra-theme-css' => Astra_Builder_Helper::apply_flex_based_css() ? 'main' : 'frontend',
+					),
+				);
+
+				if ( defined( 'ASTRA_EXT_VER' ) ) {
+					$default_assets['js']['astra-theme-js-pro'] = 'frontend-pro';
+				}
+
+				if ( Astra_Builder_Helper::is_component_loaded( 'edd-cart', 'header' ) ||
+					Astra_Builder_Helper::is_component_loaded( 'woo-cart', 'header' ) ) {
+					$default_assets['js']['astra-mobile-cart'] = 'mobile-cart';
+				}
+			}
 			return apply_filters( 'astra_theme_assets', $default_assets );
 		}
 
@@ -189,7 +215,7 @@ if ( ! class_exists( 'Astra_Enqueue_Scripts' ) ) {
 
 			// Polyfill for CustomEvent for IE.
 			wp_register_script( 'astra-customevent', $js_uri . 'custom-events-polyfill' . $file_prefix . '.js', array(), ASTRA_THEME_VERSION, false );
-
+			wp_register_style( 'astra-galleries-css', $css_uri . 'galleries' . $file_prefix . '.css', array(), ASTRA_THEME_VERSION, 'all' );
 			// All assets.
 			$all_assets = self::theme_assets();
 			$styles     = $all_assets['css'];
@@ -232,12 +258,25 @@ if ( ! class_exists( 'Astra_Enqueue_Scripts' ) ) {
 			add_filter( 'astra_dynamic_theme_css', array( 'Astra_Dynamic_CSS', 'return_output' ) );
 			add_filter( 'astra_dynamic_theme_css', array( 'Astra_Dynamic_CSS', 'return_meta_output' ) );
 
-			// Submenu Container Animation.
 			$menu_animation = astra_get_option( 'header-main-submenu-container-animation' );
+
+			// Submenu Container Animation for header builder.
+			if ( true === Astra_Builder_Helper::$is_header_footer_builder_active ) {
+
+				for ( $index = 1; $index <= Astra_Builder_Helper::$component_limit; $index++ ) {
+
+					$menu_animation_enable = astra_get_option( 'header-menu' . $index . '-submenu-container-animation' );
+
+					if ( Astra_Builder_Helper::is_component_loaded( 'menu-' . $index, 'header' ) && ! empty( $menu_animation_enable ) ) {
+						$menu_animation = 'is_animated';
+						break;
+					}
+				}
+			}
 
 			$rtl = ( is_rtl() ) ? '-rtl' : '';
 
-			if ( ! empty( $menu_animation ) ) {
+			if ( ! empty( $menu_animation ) || is_customize_preview() ) {
 				if ( class_exists( 'Astra_Cache' ) ) {
 					Astra_Cache::add_css_file( ASTRA_THEME_DIR . 'assets/css/' . $dir_name . '/menu-animation' . $rtl . $file_prefix . '.css' );
 				} else {
@@ -261,6 +300,7 @@ if ( ! class_exists( 'Astra_Enqueue_Scripts' ) ) {
 			}
 
 			if ( is_array( $scripts ) && ! empty( $scripts ) ) {
+
 				// Register & Enqueue Scripts.
 				foreach ( $scripts as $key => $script ) {
 
@@ -333,6 +373,18 @@ if ( ! class_exists( 'Astra_Enqueue_Scripts' ) ) {
 		 */
 		public static function enqueue_theme_assets() {
 			return apply_filters( 'astra_enqueue_theme_assets', true );
+		}
+
+		/**
+		 * Enqueue galleries relates CSS on gallery_style filter.
+		 *
+		 * @param string $gallery_style gallery style and div.
+		 * @since 3.5.0
+		 * @return string
+		 */
+		public function enqueue_galleries_style( $gallery_style ) {
+			wp_enqueue_style( 'astra-galleries-css' );
+			return $gallery_style;
 		}
 
 	}
